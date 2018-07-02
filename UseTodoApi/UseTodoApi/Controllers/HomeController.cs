@@ -15,8 +15,7 @@ namespace UseTodoApi.Controllers
         /// Directs the user to the index page where the user can
         /// view the Todo lists and items for each list
         /// </summary>
-        /// <returns></returns>
-
+        /// <returns>View()</returns
         public async Task<IActionResult> Index()
         {
             using (HttpClient client = new HttpClient())
