@@ -1,1 +1,9 @@
-﻿TODO LISTS HERE
+﻿@model List<UseTodoApi.Models.TodoItem>
+
+@foreach (var item in Model)
+{
+    <h2>@item.Name</h2>
+    <p>Completed: @item.IsComplete</p>
+    <p>From List: @item.ListId</p>
+
+}
