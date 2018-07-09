@@ -10,7 +10,7 @@ namespace UseTodoApi.Controllers
 {
     public class TodoListController : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> ViewAllLists()
         {
             using (HttpClient client = new HttpClient())
             {
@@ -23,7 +23,7 @@ namespace UseTodoApi.Controllers
                 if (response.EnsureSuccessStatusCode().IsSuccessStatusCode)
                 {
                     var stringResult = await response.Content.ReadAsStringAsync();
-                    var obj = JsonConvert.DeserializeObject<List<TodoItem>>(stringResult);
+                    var obj = JsonConvert.DeserializeObject<List<TodoList>>(stringResult);
                     return View(obj);
                 }
             }

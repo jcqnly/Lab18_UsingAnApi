@@ -11,7 +11,7 @@ namespace UseTodoApi.Controllers
 {
     public class TodoItemController : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> ViewAllItems()
         {
             using (HttpClient client = new HttpClient())
             {
