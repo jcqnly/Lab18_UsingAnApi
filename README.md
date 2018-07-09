@@ -13,7 +13,7 @@ which will call out to the api for all todo items.  The other call is to api/tod
 which will call out to the api for all the todo lists..
 The recieved data is then extracted within a using statment that implements
 .Result to extract the data, which is then deserialized with NewtonSoft.
-The deployed site can be found [here](http://listsoflists.azurewebsites.net/).
+The deployed site can be found [here](http://useartisanalapi.azurewebsites.net/).
 
 ---
 ## Dependencies
@@ -29,7 +29,7 @@ cd Lab1_UsingAnApi
 dotnet restore
 dotnet run
 ```
-Building the app is not necessary because it has been [deployed](http://listsoflists.azurewebsites.net/).
+Building the app is not necessary because it has been [deployed](http://useartisanalapi.azurewebsites.net/).
 
 
 ---

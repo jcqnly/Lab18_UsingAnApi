@@ -1,7 +1,15 @@
-﻿@{ 
+﻿@model List<UseTodoApi.Models.TodoItem>
+@{
     Layout = "_Layout";
 }
 
 <div class="container" style="text-align:center">
     <h1>What will you do today?</h1>
 </div>
+
+@foreach (var item in Model)
+{
+    <h2>@item.Name</h2>
+    <p>Completed: @item.IsComplete</p>
+    <p>From List: @item.ListId</p>
+}

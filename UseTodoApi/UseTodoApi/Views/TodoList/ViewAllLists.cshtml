@@ -1,0 +1,11 @@
+﻿@model List<UseTodoApi.Models.TodoList>
+@{
+    Layout = "_Layout";
+}
+
+<div class="container" style="text-align:center">
+    @foreach (var item in Model)
+    {
+        <h2>@item.Name</h2>
+    }
+</div>
