@@ -33,10 +33,18 @@ Building the app is not necessary because it has been [deployed](http://useartis
 
 
 ---
-## Screenshots
-Display all items
+## Walk Through
+Upon arriving at the [Landing Page](http://useartisanalapi.azurewebsites.net/):
 
-![all todo items](/assets/listofitems.png)
+![Landing Page](/assets/landingPage.png)
+
+Click on "View All Todo Items" in the nav bar to see all the items to do:
+
+![All Todo Items](/assets/viewAllItems.png)
+
+Then, click on "View All Todo Lists" in the nav bar to see all the lists:
+
+![All Todo Lists](/assets/viewAllLists.png)
 
 ---
 ## Acknowledgements
