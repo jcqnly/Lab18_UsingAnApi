@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace UseTodoApi.Models
 {
     public class TodoList
     {
-        public long Id { get; set; }
+        public int Id { get; set; }
+
+        [Required]
         public string Name { get; set; }
+
+        [Display(Name = "All the todo items")]
         public List<TodoItem> TodoItems { get; set; }
     }
 }

@@ -8,13 +8,8 @@ using UseTodoApi.Models;
 
 namespace UseTodoApi.Controllers
 {
-    public class HomeController : Controller
+    public class TodoListController : Controller
     {
-        /// <summary>
-        /// Directs the user to the index page where the user can
-        /// view the Todo lists and items for each list
-        /// </summary>
-        /// <returns>View()</returns
         public async Task<IActionResult> Index()
         {
             using (HttpClient client = new HttpClient())
@@ -23,7 +18,7 @@ namespace UseTodoApi.Controllers
                 client.BaseAddress = new Uri("http://artisanalapi.azurewebsites.net");
 
                 //the .Result is important for us to extract the result of the response from the call
-                var response = client.GetAsync("api/todo").Result;
+                var response = client.GetAsync("api/todolist").Result;
 
                 if (response.EnsureSuccessStatusCode().IsSuccessStatusCode)
                 {
@@ -34,6 +29,5 @@ namespace UseTodoApi.Controllers
             }
             return View();
         }
-
     }
 }
