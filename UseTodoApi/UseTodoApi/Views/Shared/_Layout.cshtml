@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <title>What to do??</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <a href="/" class="navbar-brand">What To Do??</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar7">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="TodoItem" asp-action="ViewAllNoodles">View All Todo Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="TodoList" asp-action="ViewAll">View All Lists</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div>@RenderBody()</div>
+    </body>
+</html>
